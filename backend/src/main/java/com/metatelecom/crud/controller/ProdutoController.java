@@ -19,7 +19,7 @@ public class ProdutoController {
         return service.salvar(produto);
     }
 
-    @PostMapping("/listar")
+    @GetMapping("/listar")
     public List<Produto> listarProdutos() {
         return service.listarProdutos();
     }
