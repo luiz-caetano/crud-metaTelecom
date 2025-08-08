@@ -5,14 +5,14 @@ import { Observable } from 'rxjs';
 export interface Produto {
   id?: number;
   nome: string;
-  precoUnitario: number;
+  valor_unitario: number;
 }
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProdutoService {
-  private baseUrl = 'http://localhost:8080/Produtos';
+  private baseUrl = 'http://localhost:8080/produtos';
 
   constructor(private http: HttpClient) {}
 
@@ -21,7 +21,7 @@ export class ProdutoService {
   }
 
   listarProdutos(): Observable<Produto[]> {
-    return this.http.post<Produto[]>(`${this.baseUrl}/listar`, {}); // seu endpoint é POST listar
+    return this.http.get<Produto[]>(`${this.baseUrl}/listar`, {}); // seu endpoint é POST listar
   }
 
   deletarProduto(id: number): Observable<void> {

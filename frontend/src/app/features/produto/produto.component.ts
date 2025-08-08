@@ -13,7 +13,7 @@ import { FormsModule } from '@angular/forms';
 export class ProdutoComponent implements OnInit {
 
   produtos: Produto[] = [];
-  novoProduto: Produto = { nome: '', precoUnitario: 0 };
+  novoProduto: Produto = { nome: '', valor_unitario: 0 };
 
   constructor(private produtoService: ProdutoService) {}
 
@@ -29,14 +29,14 @@ export class ProdutoComponent implements OnInit {
   }
 
   adicionarProduto(): void {
-    if (!this.novoProduto.nome || this.novoProduto.precoUnitario <= 0) {
+    if (!this.novoProduto.nome || this.novoProduto.valor_unitario <= 0) {
       alert('Preencha nome e preço válido!');
       return;
     }
     this.produtoService.criarProduto(this.novoProduto).subscribe({
       next: (produto) => {
         this.produtos.push(produto);
-        this.novoProduto = { nome: '', precoUnitario: 0 };
+        this.novoProduto = { nome: '', valor_unitario: 0 };
       },
       error: (err) => console.error('Erro ao adicionar produto', err)
     });

@@ -7,7 +7,7 @@
   </label>
   <label>
     Preço Unitário:
-    <input type="number" [(ngModel)]="novoProduto.precoUnitario" name="valorUnitario" required />
+    <input type="number" [(ngModel)]="novoProduto.valor_unitario" name="valor_unitario" required />
   </label>
   <button type="submit">Adicionar Produto</button>
 </form>
@@ -29,7 +29,7 @@
     <tr *ngFor="let produto of produtos">
       <td>{{ produto.id }}</td>
       <td>{{ produto.nome }}</td>
-      <td>{{ produto.precoUnitario }}</td>
+      <td>{{ produto.valor_unitario }}</td>
       <td>
         <button (click)="deletarProduto(produto.id)">Deletar</button>
       </td>
