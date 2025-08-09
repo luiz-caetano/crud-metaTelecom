@@ -29,4 +29,9 @@ public class ProdutoController {
         service.deletar(id);
     }
 
+    @PutMapping("/atualizar")
+    public Produto atualizar(@RequestBody Produto produto) {
+        return service.atualizar(produto);
+    }
+
 }

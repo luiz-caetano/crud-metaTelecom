@@ -45,7 +45,4 @@ public class Produto {
         this.valor_unitario = valor_unitario;
     }
 
-
-
-
 }
