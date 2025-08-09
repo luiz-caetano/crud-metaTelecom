@@ -1,19 +1,20 @@
-/* Fonte moderna e reset básico */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 body {
-  font-family: "Segoe UI", Tahoma, sans-serif;
   background-color: #f5f6fa;
   color: #333;
   margin: 0;
   padding: 20px;
 }
 
-/* Título */
+* {
+    font-family: "Roboto", sans-serif;
+}
+
 h2, h3 {
   color: #2f3640;
   text-align: center;
 }
 
-/* Formulário */
 form {
   background: #fff;
   padding: 20px;
@@ -63,7 +64,6 @@ button:hover {
   background: #74b9ff;
 }
 
-/* Tabela */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -91,7 +91,6 @@ tbody tr:hover {
   transition: 0.2s;
 }
 
-/* Botão Editar (verde) */
 .btn-editar {
   background: #00b894;
 }
@@ -99,7 +98,6 @@ tbody tr:hover {
   background: #55efc4;
 }
 
-/* Botão Excluir (vermelho) */
 .btn-excluir {
   background: #d63031;
 }
@@ -107,7 +105,6 @@ tbody tr:hover {
   background: #ff7675;
 }
 
-/* Botão Salvar (azul) */
 .btn-salvar {
   background: #0984e3;
 }
@@ -115,7 +112,6 @@ tbody tr:hover {
   background: #74b9ff;
 }
 
-/* Botão Cancelar (cinza) */
 .btn-cancelar {
   background: #636e72;
 }
@@ -123,7 +119,6 @@ tbody tr:hover {
   background: #b2bec3;
 }
 
-/* Botão Lista (roxo) */
 .btn-lista {
   background: #6c5ce7;
 }
@@ -131,7 +126,6 @@ tbody tr:hover {
   background: #a29bfe;
 }
 
-/* Agrupamento dos botões do formulário */
 .botoes-acao {
   display: flex;
   gap: 8px;
@@ -143,7 +137,6 @@ tbody tr:hover {
   margin-top: 10px;
 }
 
-/* Responsividade */
 @media (max-width: 600px) {
   form {
     padding: 15px;
