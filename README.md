@@ -93,5 +93,3 @@ Este projeto é um **CRUD (Create, Read, Update, Delete)** para gerenciamento de
 Este projeto é de uso livre para fins de estudo e testes.
 
 ---
-
-Se quiser, posso já deixar esse README formatado com **exemplo de request e response JSON** para cada endpoint, para seu vídeo do processo seletivo ficar mais completo. Quer que eu adicione?
