@@ -1,4 +1,3 @@
-Perfeito! Agora que vi toda a estrutura e que você usou **PostgreSQL**, vou ajustar o README para refletir isso e incluir a parte do **frontend** também.
 
 ---
 
